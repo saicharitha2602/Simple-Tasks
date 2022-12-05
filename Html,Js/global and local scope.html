@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Scope</h2>
+
+<p>A GLOBAL variable can be accessed from any script or function.</p>
+<p>A local varibale can be accessed only in a block(paranthesis)</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo2"></p>
+
+<script>
+let string1 = "Hello";
+myFunction();
+
+function myFunction() {
+	let string2="World";
+  document.getElementById("demo1").innerHTML = "Global variable" + string1;
+ document.getElementById("demo2").innerHTML = "Local Varibale" + string2;
+	
+}
+ document.getElementById("demo3").innerHTML = "Local Varibale being accessed outside of the scope"+ string2;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+<body>
+<p id="temp1">Example using ID</p>
+    <p>Example using ID</p>
+
+<p class="test">This is a paragraph of text.</p>
+    
+
+<h2> Example for selection using tag name </h2>
+<ul>
+        <li>Doctor</li>
+        <li class="c1">Engineer</li>
+        <li>Lawyer</li>
+    </ul>
+    
+
+    <script>
+    // Selecting element with id mark 
+    var match = document.getElementById("temp1");
+     
+    // Highlighting element's background
+    match.style.background = "yellow";
+
+// Selecting elements with class test
+    var matches = document.getElementsByClassName("test");
+        
+    
+matches[0].style.fontWeight = "bold";
+
+
+//Selecting elements using tag name h2
+var matches = document.getElementsByTagName("h2");
+        
+    
+   
+     
+    // Highlighting each h2 tag background through loop
+    
+        matches[0].style.fontStyle = "italic";
+    
+
+//using css selectors
+result = document.querySelectorAll("ul li.c1");
+    result[0].style.background = "pink";
+
+
+    </script>
+</body>
+</html>
